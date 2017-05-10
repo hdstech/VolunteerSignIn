@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.dataPopUpController">
+   <children>
+      <Label layoutX="210.0" layoutY="7.0" opacity="0.5" text="EVENT INFO">
+         <font>
+            <Font name="Microsoft Sans Serif" size="30.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="submit" layoutX="310.0" layoutY="396.0" onAction="#setSubmit" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #c42f06;" text="Submit" textFill="WHITE" />
+      <JFXButton fx:id="cancel" layoutX="172.0" layoutY="396.0" onAction="#setCancel" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #ccc;" text="Cancel" />
+      <Pane layoutX="40.0" layoutY="66.0" prefHeight="284.0" prefWidth="524.0" style="-fx-background-radius: 5; -fx-background-color: #FFF;">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#40404032" height="35.0" radius="17.0" spread="0.1" width="35.0" />
+         </effect>
+         <children>
+            <JFXDatePicker fx:id="selectDate" defaultColor="#f8893f" layoutX="14.0" layoutY="60.0" />
+            <JFXDatePicker fx:id="selectTime" defaultColor="#f8893f" editable="false" layoutX="14.0" layoutY="160.0" showTime="true" />
+            <JFXListView fx:id="event" layoutX="262.0" layoutY="40.0" prefHeight="232.0" prefWidth="252.0" />
+            <Label layoutX="326.0" layoutY="14.0" text="Choose your event" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

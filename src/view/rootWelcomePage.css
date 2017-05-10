@@ -1,0 +1,6 @@
+.img-background {
+  -fx-background-image: url('images/bg1.png');
+  /*-fx-background-repeat: no-repeat;
+  -fx-background-position: center;*/
+  -fx-prompt-text-fill: #FFF;
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fff;" styleClass="img-background" stylesheets="@rootWelcomePage.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Controller">
+   <children>
+      <TextField fx:id="name" layoutX="164.0" layoutY="120.0" opacity="0.5" prefHeight="30.0" prefWidth="275.0" style="-fx-background-color: #BCBCBC; -fx-border-color: #DDD;" styleClass="img-background" stylesheets="@textfields.css">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </TextField>
+      <TextField id="email-fiel" fx:id="email" layoutX="164.0" layoutY="180.0" opacity="0.5" prefHeight="30.0" prefWidth="275.0" style="-fx-background-color: #BCBCBC; -fx-border-color: #DDD;" styleClass="img-background" stylesheets="@textfields.css">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="vID" layoutX="163.0" layoutY="240.0" opacity="0.5" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: #BCBCBC; -fx-border-color: #DDD;" styleClass="img-background" stylesheets="@textfields.css">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </TextField>
+      <JFXRadioButton fx:id="bridges" layoutX="343.0" layoutY="245.0" style="-fx-unselected-color: #FFF;" stylesheets="@textfields.css" text="Bridges" textFill="WHITE" />
+      <JFXButton fx:id="cancel" contentDisplay="CENTER" layoutX="163.0" layoutY="327.0" onAction="#setCancelBtn" prefHeight="59.0" prefWidth="122.0" style="-fx-background-color: lightblue; -fx-background-radius: 0;" text="Cancel">
+         <font>
+            <Font name="Microsoft JhengHei" size="24.0" />
+         </font></JFXButton>
+      <Label layoutX="163.0" layoutY="26.0" text="Volunteer Sign In" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Pane id="user-field" blendMode="OVERLAY" layoutX="124.0" layoutY="116.0" prefHeight="40.0" prefWidth="40.0" stylesheets="@textfields.css">
+         <effect>
+            <ColorAdjust brightness="1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+         </effect>
+      </Pane>
+      <Pane id="email-field" blendMode="OVERLAY" layoutX="124.0" layoutY="174.0" prefHeight="40.0" prefWidth="40.0" stylesheets="@textfields.css">
+         <effect>
+            <ColorAdjust brightness="1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+         </effect>
+      </Pane>
+      <Pane id="id-field" blendMode="OVERLAY" layoutX="124.0" layoutY="235.0" prefHeight="40.0" prefWidth="40.0" stylesheets="@textfields.css">
+         <effect>
+            <ColorAdjust brightness="1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+         </effect>
+      </Pane>
+      <JFXButton fx:id="submit" contentDisplay="CENTER" layoutX="317.0" layoutY="327.0" onAction="#submitBtn" prefHeight="59.0" prefWidth="122.0" style="-fx-background-color: E32B00; -fx-background-radius: 0;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="Microsoft JhengHei" size="24.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

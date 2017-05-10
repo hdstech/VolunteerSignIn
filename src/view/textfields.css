@@ -1,0 +1,52 @@
+.text-field {
+  -fx-base: transparent;
+  /*-fx-background-color: derive(-fx-background, 10%);*/
+  -fx-background: derive(-fx-base, 30%);
+  -fx-background-radius: 0px 0px;
+  -fx-highlight-fill: #CCC;
+  -fx-highlight-text-fill: #EEE;
+  -fx-text-fill: #FFF;
+  -fx-font-size: 15;
+  -fx-prompt-text-fill: #FFF;
+
+}
+
+#user-field {
+  -fx-background-image:url('icons/user-icon.png');
+  -fx-background-position: center;
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: 25px;
+  -fx-opacity: .4;
+}
+
+#email-field {
+  -fx-background-image:url('icons/email-icon.png');
+  -fx-background-position: center;
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: 25px;
+  -fx-opacity: .4;
+}
+
+#id-field {
+  -fx-background-image:url('icons/id-icon.png');
+  -fx-background-position: center;
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: 25px;
+  -fx-opacity: .4;
+}
+
+.jfx-radio-button {
+  -fx-selected-color: ghostwhite;
+}
+
+/*#entry-font{
+  -fx-text-fill: #FFF;
+  -fx-opacity: 1;
+  -fx-base: transparent;
+  /*-fx-background-color: derive(-fx-background, 10%);
+  -fx-background: derive(-fx-base, 30%);
+  -fx-background-radius: 0px 0px;
+  -fx-highlight-fill: #CCC;
+  -fx-highlight-text-fill: #EEE;
+}
+*/

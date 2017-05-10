@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fff;" styleClass="img-background" stylesheets="@rootWelcomePage.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.initialScreencontroller">
+   <children>
+      <JFXButton fx:id="newUserBtn" buttonType="RAISED" contentDisplay="CENTER" layoutX="14.0" layoutY="259.0" onAction="#setNewUserBtn" prefHeight="59.0" prefWidth="275.0" style="-fx-background-color: E32B00; -fx-background-radius: 0;" text="New User" textFill="WHITE">
+         <font>
+            <Font name="Microsoft JhengHei" size="24.0" />
+         </font></JFXButton>
+      <Label layoutX="107.0" layoutY="90.0" text="Student Volunteer Sign In" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="signInBtn" buttonType="RAISED" contentDisplay="CENTER" layoutX="312.0" layoutY="259.0" onAction="#setSignInBtn" prefHeight="59.0" prefWidth="275.0" style="-fx-background-color: cornflowerblue; -fx-background-radius: 0;" text="Sign In" textFill="WHITE">
+         <font>
+            <Font name="Microsoft JhengHei" size="24.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

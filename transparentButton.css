@@ -1,0 +1,8 @@
+.button {
+    -fx-background-color: derive(-fx-base, 60%), -fx-background ; 
+    -fx-background-insets: 0, 1px ;
+    -fx-background-radius: 4px, 0 ;
+}
+ .button:hover {
+    -fx-background-color: #fff, derive(-fx-background, -5%) ;
+} 
